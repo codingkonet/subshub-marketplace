@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubsHub - Marketplace d'Abonnements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>SubsHub</h1>
+                <p class="tagline">Marketplace légale d'abonnements premium</p>
+            </div>
+            <nav class="nav">
+                <a href="#" class="btn-nav active">Accueil</a>
+                <a href="#" class="btn-nav">Vendre</a>
+                <a href="#" class="btn-nav">À propos</a>
+                <a href="#" class="btn-cart">🛒 Panier (0)</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Accédez à des abonnements premium au meilleur prix</h2>
+            <p>Achetez et vendez des codes, accès et abonnements légaux en toute sécurité</p>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Rechercher un service...">
+                <button class="btn-search">🔍 Chercher</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <h3>Filtrer par catégorie</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="streaming">Streaming</button>
+                <button class="filter-btn" data-filter="music">Musique</button>
+                <button class="filter-btn" data-filter="gaming">Gaming</button>
+                <button class="filter-btn" data-filter="other">Autres</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <h4>500+</h4>
+                <p>Services disponibles</p>
+            </div>
+            <div class="stat-item">
+                <h4>2,500+</h4>
+                <p>Clients satisfaits</p>
+            </div>
+            <div class="stat-item">
+                <h4>150+</h4>
+                <p>Vendeurs vérifiés</p>
+            </div>
+            <div class="stat-item">
+                <h4>4.8/5 ⭐</h4>
+                <p>Note moyenne</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h3>Services disponibles</h3>
+            <div class="products-grid" id="productsGrid">
+                <!-- Les produits seront générés par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Product Details -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalCategory"></p>
+            <p id="modalDescription"></p>
+            <div class="modal-details">
+                <p><strong>Durée:</strong> <span id="modalDuration"></span></p>
+                <p><strong>Vendeur:</strong> <span id="modalVendor"></span></p>
+                <p><strong>Note:</strong> <span id="modalRating"></span></p>
+                <p><strong>Prix:</strong> <span id="modalPrice" class="price"></span></p>
+            </div>
+            <button class="btn-add-cart" id="addToCartBtn">Ajouter au panier</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SubsHub Marketplace. Tous droits réservés.</p>
+            <p>Plateforme légale - Respect des conditions d'utilisation</p>
+            <div class="footer-links">
+                <a href="#">Conditions d'utilisation</a> |
+                <a href="#">Politique de confidentialité</a> |
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
